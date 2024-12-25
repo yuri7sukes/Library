@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__label">Library</div>
+        <div class="stats">
+          <div class="stats__total-books">Total books: <span class="stats__total-books-number">52</span></div>
+          <div class="stats__read">Read:<span class="stats__read-number">51</span></div>
+          <div class="stats__not-read">To read:<span class="stats__not-read-number">1</span></div>
+          <div class="stats__total-pages">Total pages:<span class="stats__total-pages-number">2025</span></div>
+        </div>
+        <button class="header__add-book-btn">+Add book</button>
+      </header>
+      <!-- КОНТЕЙНЕР НАШИХ КНИЖЕЧЕК  -->
+      <main class="main">
+        <!-- <div class="book-card">
+          <div class="book-card__title">it's me, edichka</div>
+          <div class="book-card__author"> By: Eduard Limonov</div>
+          <div class="book-card__pages">Pages: 169</div>
+
+          <div class="book-card__status-wrapper">
+              <label for="book-card__status">Status</label>
+              <select name="" id="book-card__status" class="book-card__status">
+                <option value="read">Read ✔</option>
+                <option value="want to read">Want to read</option>
+              </select>
+          </div>
+          
+          <button class="book-card__remove">X</button>
+
+        </div> -->
+      </main>
+      <footer class="footer">
+        <div class="github">Made by BB</div>
+      </footer>
+
+      <div id="overlay"></div>
+      <div class="add-book">
+        <form action="" id="book-form">
+          <div class="add-book__header-text">Add book</div>
+
+          <div class="add-book__input-wrapper">
+            <label for="add-book__title">Title*</label>
+            <input
+              type="text"
+              id="add-book__title"
+              name="add-book__title"
+              required
+            />
+          </div>
+
+          <div class="add-book__input-wrapper">
+            <label for="add-book__author">Author*</label>
+            <input
+              type="text"
+              id="add-book__author"
+              name="add-book__author"
+              required
+            />
+          </div>
+
+          <div class="add-book__input-wrapper">
+            <label for="add-book__pages">Number of pages*</label>
+            <input
+              type="number"
+              id="add-book__pages"
+              name="add-book__pages"
+              required
+            />
+          </div>
+
+          <div class="add-book__input-wrapper">
+            <label for="add-book__status" >Have you read it?</label>
+            <input
+              type="checkbox"
+              id="add-book__status"
+              name="add-book__status"
+            />
+          </div>
+
+          <button type="submit" class="add-book__add-btn">ADD</button>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>

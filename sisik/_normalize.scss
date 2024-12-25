@@ -1,0 +1,82 @@
+/* 1. Установим box-sizing для всех элементов */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Уберем внешние отступы у некоторых элементов */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 3. Зададим базовый стиль для body */
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+/* 4. Убедимся, что элементы занимают всю доступную ширину */
+html,
+body {
+  height: 100%;
+}
+
+/* 5. Сделаем изображения и видео отзывчивыми */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 6. Удалим стандартные стили для списка */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* 7. Сбросим базовые стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 8. Убедимся, что кнопки выглядят консистентно */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", serif;
+  font-weight: 600;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* 9. Зададим нейтральный стиль для таблиц */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0;
+  text-align: left;
+}
